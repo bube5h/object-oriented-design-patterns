@@ -1,11 +1,9 @@
 package strategy;
 
-import java.util.List;
-
 public class Context {
 
-    private TaxCalculator indiaTaxCalculator = new IndiaTaxCalculator();
-    private TaxCalculator usaTaxCalculator = new UsaTaxCalculator();
+    private final TaxCalculator indiaTaxCalculator = new IndiaTaxCalculator();
+    private final TaxCalculator usaTaxCalculator = new UsaTaxCalculator();
 
     public int calculateTax(String country, int income) {
 
